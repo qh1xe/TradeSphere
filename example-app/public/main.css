@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #D9D9D9;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #33421f;
+    padding: 15px 40px;
+   
+}
+
+.navbar-brand a {
+    display: block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #4CAF50;
+    border-radius: 50%;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    gap: 30px;
+}
+
+.navbar-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar-links li a:hover {
+    color: #cccccc;
+}
+
+.navbar-links li a.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* About us css */
+
+.QuoteAboutUs h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Stencil Std, fantasy;
+    font-style: italic;
+    font-weight: 800; /* or 700 for bolder */
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    line-height: 0.9;
+    color: #000;
+    margin-top: 90px;
+
+
+}
+
+.ShortIntroAboutUs {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+    column-gap: 48px;
+    row-gap: 16px;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 48px 24px;
+}
+
+/* Left column: label, heading, paragraph all stacked */
+.ShortIntroAboutUs h3 {
+    grid-column: 1;
+    grid-row: 1;
+
+    color: #2b3a67;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.ShortIntroAboutUs h2 {
+    grid-column: 1;
+    grid-row: 2;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    line-height: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    color: #000;
+    margin: 0;
+}
+
+.ShortIntroAboutUs h2 .highlight {
+    color: #1a1a2e;
+}
+
+.ShortIntroAboutUs .textContainerShort {
+    grid-column: 1;
+    grid-row: 3;
+    margin-top: 16px;
+}
+
+.ShortIntroAboutUs p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+/* Right column: image, spans all three rows so it's centered next to the text block */
+.ShortIntroAboutUs img {
+    grid-column: 2;
+    grid-row: 1 / 4;
+
+    width: 100%;
+    height: 100%;
+    max-height: 320px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+
+
+@media (max-width: 900px) {
+    .ShortIntroAboutUs {
+        grid-template-columns: 1fr;
+        row-gap: 24px;
+    }
+    .ShortIntroAboutUs h3 { grid-column: 1; grid-row: 1; }
+    .ShortIntroAboutUs h2 { grid-column: 1; grid-row: 2; }
+    .ShortIntroAboutUs .textContainerShort { grid-column: 1; grid-row: 3; }
+    .ShortIntroAboutUs img { grid-column: 1; grid-row: 4; max-height: none; }
+}
+
+.StoryAboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Stencil Std, fantasy;
+    font-style: italic;
+    font-weight: 800; /* or 700 for bolder */
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    line-height: 0.9;
+    color: #000;
+    padding: 10%;
+}
+
+
+
